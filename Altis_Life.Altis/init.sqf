@@ -5,3 +5,8 @@ enableSaving[false,false];
 [] execVM "KRON_Strings.sqf";
 
 StartProgress = true;
+
+//start fuel monitor
+[] spawn {
+	[] execVM "scripts\fuelPay.sqf";
+};
